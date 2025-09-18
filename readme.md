@@ -19,7 +19,9 @@ cd poke-api
 สร้าง .env:
 ```
 
+
 ## ENV
+- **Optional ถ้าต้องการ Run บน local ให้ใส่ ENV แต่ถ้าต้องการ Run บน docker ไป Step ถัดไป**
 ```bash
 PORT=8080
 MONGO_URI=mongodb://mongo:27017
