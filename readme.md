@@ -32,7 +32,7 @@ JWT_SECRET ต้อง ≥ 32 ตัวอักษร
 docker-compose up --build
 Server: http://localhost:8080
 MongoDB: mongodb://localhost:27017
-``
+```
 
 ## 📦 API Endpoints
 Method
