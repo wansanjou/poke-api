@@ -3,8 +3,6 @@
 RESTful API สำหรับดึงข้อมูล Pokémon จาก [PokeAPI](https://pokeapi.co/)  
 รองรับ **User Register/Login** พร้อม **JWT Authentication** และ **Cache** เพื่อลดการเรียกซ้ำ
 
----
-
 ## 🛠 Tech Stack
 
 - **Go 1.25 + Fiber**
@@ -12,8 +10,6 @@ RESTful API สำหรับดึงข้อมูล Pokémon จาก [Po
 - **JWT Authentication**
 - **In-memory Cache** (go-cache)
 - **Docker + Docker Compose**
-
----
 
 ## 🚀 Quick Start
 
@@ -23,8 +19,6 @@ cd poke-api
 สร้าง .env:
 ```
 
----
-
 ## ENV
 ```bash
 PORT=8080
@@ -33,15 +27,12 @@ JWT_SECRET=aB3dE6FgH7jK8LmN9pQrStUvWxYz1234
 JWT_SECRET ต้อง ≥ 32 ตัวอักษร
 ```
 
----
-
 ## Run Docker:
 ```bash
 docker-compose up --build
 Server: http://localhost:8080
 MongoDB: mongodb://localhost:27017
-```
----
+``
 
 ## 📦 API Endpoints
 Method
