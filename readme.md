@@ -49,9 +49,9 @@ GET	/api/pokemon/random
 
 ## 📄 Examples
 Register
-http
-POST /register
-Content-Type: application/json
+- **http**
+- **POST /register**
+- **Content-Type: application/json**
 
 ```bash
 {
@@ -68,9 +68,9 @@ json
 ```
 
 Login
-http
-POST /login
-Content-Type: application/json
+- **http**
+- **POST /login**
+- **Content-Type: application/json**
 
 ```bash
 {
@@ -87,9 +87,9 @@ json
 
 
 Get Random Pokemon
-http
-GET /api/pokemon/random
-Authorization: Bearer <token>
+- **http**
+- **GET /api/pokemon/random**
+- **Authorization: Bearer <token>**
 Response:
 
 ```bash
@@ -111,9 +111,9 @@ json
 ```
 
 Get Pokémon
-http
-GET /api/pokemon/pikachu
-Authorization: Bearer <token>
+- **http**
+- **GET /api/pokemon/pikachu**
+- **Authorization: Bearer <token>**
 Response:
 
 ```bash
@@ -127,9 +127,9 @@ json
 ```
 
 Get Abilities
-http
-GET /api/pokemon/pikachu/ability
-Authorization: Bearer <token>
+- **http**
+- **GET /api/pokemon/pikachu/ability**
+- **Authorization: Bearer <token>**
 Response:
 
 ```bash
