@@ -83,6 +83,31 @@ json
 }
 ```
 
+
+Get Random Pokemon
+http
+GET /api/pokemon/random
+Authorization: Bearer <token>
+Response:
+
+```bash
+json
+{
+    "name": "vivillon",
+    "height": 12,
+    "weight": 170,
+    "types": [
+        "bug",
+        "flying"
+    ],
+    "abilities": [
+        "shield-dust",
+        "compound-eyes",
+        "friend-guard"
+    ]
+}
+```
+
 Get Pokémon
 http
 GET /api/pokemon/pikachu
@@ -111,6 +136,7 @@ json
   "abilities": ["static", "lightning-rod"]
 }
 ```
+
 
 ## 📝 Notes
 Cache Pokémon ข้อมูลละ 10 นาที เพื่อลดการเรียก PokeAPI ซ้ำ
