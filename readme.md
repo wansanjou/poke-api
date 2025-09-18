@@ -21,35 +21,46 @@ RESTful API สำหรับดึงข้อมูล Pokémon จาก [Po
 git clone https://github.com/<username>/poke-api.git
 cd poke-api
 สร้าง .env:
+```
 
-env
+---
+
+## ENV
+```bash
 PORT=8080
 MONGO_URI=mongodb://mongo:27017
 JWT_SECRET=aB3dE6FgH7jK8LmN9pQrStUvWxYz1234
 JWT_SECRET ต้อง ≥ 32 ตัวอักษร
+```
 
-Run Docker:
+---
 
-bash
+## Run Docker:
+```bash
 docker-compose up --build
 Server: http://localhost:8080
-
 MongoDB: mongodb://localhost:27017
+```
+---
 
-📦 API Endpoints
+## 📦 API Endpoints
 Method
+```bash
 POST	/register
 POST	/login	
 GET	/api/pokemon/:name	
 GET	/api/pokemon/:name/ability	
 GET	/api/pokemon/random
+```
 
-📄 Examples
+
+## 📄 Examples
 Register
 http
 POST /register
 Content-Type: application/json
 
+```bash
 {
   "username": "ash",
   "password": "pikachu1234"
@@ -61,12 +72,14 @@ json
     "username": "ash",
     "created_at": "2025-09-18T11:42:15.846091927Z"
 }
+```
 
 Login
 http
 POST /login
 Content-Type: application/json
 
+```bash
 {
   "username": "ash",
   "password": "pikachu1234"
@@ -77,6 +90,7 @@ json
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR..."
 }
+```
 
 Get Pokémon
 http
@@ -84,6 +98,7 @@ GET /api/pokemon/pikachu
 Authorization: Bearer <token>
 Response:
 
+```bash
 json
 {
   "name": "pikachu",
@@ -91,6 +106,7 @@ json
   "weight": 60,
   "abilities": ["static", "lightning-rod"]
 }
+```
 
 Get Abilities
 http
@@ -98,12 +114,14 @@ GET /api/pokemon/pikachu/ability
 Authorization: Bearer <token>
 Response:
 
+```bash
 json
 {
   "abilities": ["static", "lightning-rod"]
 }
+```
 
-📝 Notes
+## 📝 Notes
 Cache Pokémon ข้อมูลละ 10 นาที เพื่อลดการเรียก PokeAPI ซ้ำ
 
 JWT Token ต้องส่งใน Header ทุกครั้ง:
